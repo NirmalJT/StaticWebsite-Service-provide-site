@@ -51,6 +51,17 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "LfLDJTQihnq9ejYZD",
+        });
+      })();
+    </script>
   </head>
   <body class="font-serif">
     <header>
@@ -58,7 +69,7 @@
         class="main w-full lg:bg-green-900 h-[800px] min-w-[320px] bg-gradient-to-r from-indigo-500 fro0% via-sky-500 via-30% to-emerald-500 to-90% ..."
       >
         <nav
-          class="flex lg:justify-between justify-center lg:gap-0 md:gap-[400px] gap-40 items-center m-auto max-w-[1000px] w-full text-black"
+          class="flex lg:justify-between justify-center lg:gap-0 md:gap-[400px] gap-40 items-center m-auto max-w-[1000px] w-full text-gray-800"
         >
           <a href="/">
             <img
@@ -77,10 +88,10 @@
                 <a href="#aboutus">About Us</a>
               </li>
               <li class="font-bold transition-all cursor-pointer">
-                <a href="#allcourses"> Services</a>
+                <a href="#services"> Services</a>
               </li>
               <li class="font-bold transition-all cursor-pointer">
-                <a href="/onlineportal"> Our Happy Clients</a>
+                <a href="#ourTeam"> Our Happy Clients</a>
               </li>
               <li class="font-bold transition-all cursor-pointer">
                 <a href="#contactUs">Contact Us</a>
@@ -155,7 +166,7 @@
               </p>
               <a href="#aboutus">
                 <div
-                  class="btn px-5 py-3 border-2 hover:scale-110 hover:border-green-400 border-black bg-blue-600 w-36 text-white shadow-lg shadow-blue-600 rounded-md font-bold cursor-pointer"
+                  class="btn px-5 py-3 hover:scale-110 hover:border-green-400 border-white bg-blue-700 w-36 text-white shadow-lg shadow-blue-600 rounded-md font-bold cursor-pointer"
                 >
                   About Us
                 </div>
@@ -253,8 +264,8 @@
                 d="M187.7 153.7c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7s61.7-26 61.7-57.7c0-32-27.7-57.7-61.7-57.7zm143.4 0c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7 34.3 0 61.7-26 61.7-57.7.1-32-27.4-57.7-61.7-57.7zm156.6 90l-6 4.3V49.7c0-27.4-20.6-49.7-46-49.7H76.6c-25.4 0-46 22.3-46 49.7V248c-2-1.4-4.3-2.9-6.3-4.3-15.1-10.6-25.1 4-16 17.7 18.3 22.6 53.1 50.3 106.3 72C58.3 525.1 252 555.7 248.9 457.5c0-.7.3-56.6.3-96.6 5.1 1.1 9.4 2.3 13.7 3.1 0 39.7.3 92.8.3 93.5-3.1 98.3 190.6 67.7 134.3-124 53.1-21.7 88-49.4 106.3-72 9.1-13.8-.9-28.3-16.1-17.8zm-30.5 19.2c-68.9 37.4-128.3 31.1-160.6 29.7-23.7-.9-32.6 9.1-33.7 24.9-10.3-7.7-18.6-15.5-20.3-17.1-5.1-5.4-13.7-8-27.1-7.7-31.7 1.1-89.7 7.4-157.4-28V72.3c0-34.9 8.9-45.7 40.6-45.7h317.7c30.3 0 40.9 12.9 40.9 45.7v190.6z"
               ></path>
             </svg>
-            <h2 class="text-xl font-bold">Computer Software Courses</h2>
-            <p>CCA, DCA, ADCA, PGDCA, Tally& Lots More....</p>
+            <h2 class="text-xl font-bold">NGO Service</h2>
+            <p>Ngo consultant</p>
           </div>
         </div>
         <div
@@ -275,8 +286,8 @@
                 d="M187.7 153.7c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7s61.7-26 61.7-57.7c0-32-27.7-57.7-61.7-57.7zm143.4 0c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7 34.3 0 61.7-26 61.7-57.7.1-32-27.4-57.7-61.7-57.7zm156.6 90l-6 4.3V49.7c0-27.4-20.6-49.7-46-49.7H76.6c-25.4 0-46 22.3-46 49.7V248c-2-1.4-4.3-2.9-6.3-4.3-15.1-10.6-25.1 4-16 17.7 18.3 22.6 53.1 50.3 106.3 72C58.3 525.1 252 555.7 248.9 457.5c0-.7.3-56.6.3-96.6 5.1 1.1 9.4 2.3 13.7 3.1 0 39.7.3 92.8.3 93.5-3.1 98.3 190.6 67.7 134.3-124 53.1-21.7 88-49.4 106.3-72 9.1-13.8-.9-28.3-16.1-17.8zm-30.5 19.2c-68.9 37.4-128.3 31.1-160.6 29.7-23.7-.9-32.6 9.1-33.7 24.9-10.3-7.7-18.6-15.5-20.3-17.1-5.1-5.4-13.7-8-27.1-7.7-31.7 1.1-89.7 7.4-157.4-28V72.3c0-34.9 8.9-45.7 40.6-45.7h317.7c30.3 0 40.9 12.9 40.9 45.7v190.6z"
               ></path>
             </svg>
-            <h2 class="text-xl font-bold">Computer Hardware Courses</h2>
-            <p>Computer Hardware, Mobile & Printer Reparing & Lots More.....</p>
+            <h2 class="text-xl font-bold">IT Services</h2>
+            <p>Complete IT support for your organization</p>
           </div>
         </div>
         <div
@@ -297,10 +308,8 @@
                 d="M187.7 153.7c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7s61.7-26 61.7-57.7c0-32-27.7-57.7-61.7-57.7zm143.4 0c-34 0-61.7 25.7-61.7 57.7 0 31.7 27.7 57.7 61.7 57.7 34.3 0 61.7-26 61.7-57.7.1-32-27.4-57.7-61.7-57.7zm156.6 90l-6 4.3V49.7c0-27.4-20.6-49.7-46-49.7H76.6c-25.4 0-46 22.3-46 49.7V248c-2-1.4-4.3-2.9-6.3-4.3-15.1-10.6-25.1 4-16 17.7 18.3 22.6 53.1 50.3 106.3 72C58.3 525.1 252 555.7 248.9 457.5c0-.7.3-56.6.3-96.6 5.1 1.1 9.4 2.3 13.7 3.1 0 39.7.3 92.8.3 93.5-3.1 98.3 190.6 67.7 134.3-124 53.1-21.7 88-49.4 106.3-72 9.1-13.8-.9-28.3-16.1-17.8zm-30.5 19.2c-68.9 37.4-128.3 31.1-160.6 29.7-23.7-.9-32.6 9.1-33.7 24.9-10.3-7.7-18.6-15.5-20.3-17.1-5.1-5.4-13.7-8-27.1-7.7-31.7 1.1-89.7 7.4-157.4-28V72.3c0-34.9 8.9-45.7 40.6-45.7h317.7c30.3 0 40.9 12.9 40.9 45.7v190.6z"
               ></path>
             </svg>
-            <h2 class="text-xl font-bold">Vocational Courses</h2>
-            <p>
-              Spoken English, Makeup & Beautician Course and Lots More.......
-            </p>
+            <h2 class="text-xl font-bold">Professional Service</h2>
+            <p>Buissness consultant</p>
           </div>
         </div>
       </div>
@@ -322,202 +331,55 @@
           </marquee>
         </div>
       </div>
-      <div
-        class="content w-full m-auto min-w-[320px] max-w-[1300px] relative botto6 space-y-6"
-      >
-        <h3 class="font-bold text-3xl lg:mx-0 mx-5">
-          MIPE (MightyTech Institute of Professional Education)
-        </h3>
-        <p class="lg:mx-0 mx-5">
-          MightyTech Institute of Professional Education (MIPE) is an autonomous
-          organization Run By “Mightytech Educational Society”, registered under
-          S.R. Act XXI of 1860 under Govt of Assam (India).MIPE is also
-          registered under Ministry of Micro Small and Medium Enterprise (MSME)
-          Govt. of India. It is an ISO 9001:2015 Certified Institute. MIPE is
-          dedicated to provide various courses of skill development. MIPE
-          provides three zone of education, which include the following-
-        </p>
-
-        <ul class="list-disc px-10">
-          <li>Computer Hardware Zone</li>
-          <li>Computer Software Zone</li>
-          <li>Vocational Zone</li>
-        </ul>
-        <p class="lg:mx-0 mx-5">
-          Our courses are designed according to need of present educational
-          system of India, to make students grow in the present era of
-          competition. MIPE provides computer and various skill development
-          education from basic to advance level. Our organization also helps
-          providing aids for new and upcoming centers at affordable franchisee
-        </p>
-        <h3 class="font-bold text-3xl lg:mx-0 mx-5">Why with Us</h3>
-        <ul class="list-disc px-10">
-          <li>MIPE offers various skill development course of nominal cost.</li>
-          <li>
-            MIPE supports new & upcoming centers by providing affordable
-            franchise.
-          </li>
-          <li>We also have online certificate & centre verification system.</li>
-          <li>We also have facilities of online & offline franchise.</li>
-          <li>
-            We also provide various personal development workshop to our
-            students and franchise partner.
-          </li>
-          <li>
-            We also available 24×7 for any queries or consultation for our
-            students and franchise partners.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="w-full h-full min-h-[600px]">
-      <div class="text-center mt-28 lg:mx-0 mx-5">
-        <h4 class="font-bold text-3xl">
-          Leading IT & Vocational Training Organization in N.E.
-        </h4>
-        <p>A Government Registered & ISO Certified Educational Organization</p>
-      </div>
-      <div>
-        <div
-          class="Founder flex flex-wrap flex-row justify-center items-center gap-12"
-        >
-          <div class="relative top-9 flex flex-col justify-center items-center">
+      <div class="flex justify-around m-16 items-center">
+        <div class="content w-full min-w-[320px] max-w-[1300px] space-y-6">
+          <h3 class="font-bold text-4xl lg">About Us</h3>
+          <p class="text-xl font-bold text-gray-800">
+            Welcome to MightyTech Consultancy Service
+          </p>
+          <p class="lg:mx-0 text-xl w-[800px]">
+            At MIGHTYTECH Consultancy Service, we are dedicated to delivering
+            exceptional solutions to our clients and customers. Our mission is
+            to surpass expectations by offering the highest-quality services and
+            an unmatched experience tailored to each individual's needs. We take
+            immense pride in our team of passionate professionals who bring
+            diverse expertise and unwavering commitment to every project. Their
+            wide-ranging skills enable us to provide a broad spectrum of
+            services, ensuring we meet the unique requirements of every client.
+            At the heart of our operations is the belief that communication is
+            the cornerstone of strong relationships. We prioritize transparency
+            and honesty in every interaction, fostering trust and open dialogue
+            throughout all stages of our collaborations. We understand that
+            every client is unique. Whether it's project management, strategy
+            development, or operational support, our tailored solutions are
+            designed to help you achieve your goals efficiently and effectively.
+            Beyond serving our clients, we are committed to creating a positive
+            impact in the community. We actively support initiatives that
+            champion social responsibility, sustainability, and diversity and
+            inclusion, reinforcing our dedication to making a difference both
+            locally and globally. Thank you for considering MIGHTYTECH
+            Consultancy Service. We are excited to collaborate with you and
+            deliver the exceptional service you deserve.
+          </p>
+          <a href="#contactUs">
             <div
-              class="rounded-full lg:w-[500px] md:w-[400px] w-[300px] flex flex-col items-center justify-center"
+              class="btn px-5 py-3 hover:scale-110 hover:border-green-400 border-green-600 border-2 bg-blue-700 w-36 text-white shadow-lg shadow-blue-600 rounded-md font-bold cursor-pointer mt-3"
             >
-              <img
-                class="relative lg:w-auto md:w-auto w-72 rounded-full shadow-blue-500 shadow-2xl"
-                src="../images/Founder&Director.jpg"
-                alt="Image of the Director of the institute"
-              />
-              <p class="text-xl font-bold pt-8 relative bottom-6">
-                Mr. Nirmal Jyoti Thakuria
-              </p>
-              <h4 class="text-3xl font-bold relative bottom-7">
-                Founder Director
-              </h4>
+              Contact Us
             </div>
-          </div>
-          <div
-            class="mainbox md:w-96 w-[300px] h-80 bg-blue-50 relative z-40 rounded-md shadow-2xl shadow-blue-500"
-          >
-            <div
-              class="md:w-96 w-[300px] h-20 bg-blue-200 flex items-center rounded-md"
-            >
-              <span
-                id="arrow-1"
-                onclick="handleToggle(1)"
-                class="material-symbols-outlined cursor-pointer hover:font-bold transition-all"
-              >
-                arrow_drop_down
-              </span>
-              <h5 class="font-bold">Our Aim</h5>
-            </div>
-            <div
-              id="data-1"
-              class="md:w-96 w-[300px] h-fit bg-blue-50 hidden showData rounded-md"
-            >
-              <p class="text-sm p-3">
-                We all know the need of skill now a days to survive in our
-                country. Many compatible students can not afford these due to
-                lack of resources or money, so we are dedicated to provide
-                quality based education at affordable price to make youth of
-                India skillful in every aspect .We focus in creating skillful
-                mind, so that they can be self employed with new startup and
-                thus creating new jobs. This will surely reduce the burden of
-                unemployment. Our final aim is to make India from developing to
-                developed country.
-              </p>
-            </div>
-
-            <div
-              class="md:w-96 w-[300px] h-20 bg-blue-200 flex items-center mt-[1px]"
-            >
-              <span
-                id="arrow-2"
-                onclick="handleToggle(2)"
-                class="material-symbols-outlined cursor-pointer hover:font-bold transition-all"
-              >
-                arrow_drop_down
-              </span>
-              <h5 class="font-bold">Our Vision</h5>
-            </div>
-            <div
-              id="data-2"
-              class="md:w-96 w-[300px] h-fit bg-blue-50 hidden showData rounded-md"
-            >
-              <p class="text-sm p-3">
-                Our Vision is to work in urban and remote rural areas to aware
-                people the importance of skill development education and make
-                students liar and compete head to head with students of
-                developed countries using modern equipment and technologies. Our
-                vision is not to produce mechanical human resource, but to
-                produce skillful sensitive human being for our developing
-                nation.
-              </p>
-            </div>
-
-            <div
-              class="md:w-96 w-[300px] h-20 bg-blue-200 flex items-center mt-[1px]"
-            >
-              <span
-                id="arrow-3"
-                onclick="handleToggle(3)"
-                class="material-symbols-outlined cursor-pointer hover:font-bold transition-all"
-              >
-                arrow_drop_down
-              </span>
-              <h5 class="font-bold">Director Message</h5>
-            </div>
-            <div
-              id="data-3"
-              class="md:w-96 w-[300px] h-fit bg-blue-50 hidden showData rounded-md"
-            >
-              <p class="text-sm p-3">
-                I strongly believe that to build a skillful nation skill
-                development education is very necessary. The youth has
-                capability to make a modern India, But somehow they are not
-                getting enough resources and guidance of skillful education
-                minds through MIPE, and make India a techhub. I am committed to
-                provide quality based education and help every youth of india.
-              </p>
-            </div>
-
-            <div
-              class="md:w-96 w-[300px] h-20 bg-blue-200 flex items-center rounded-md mt-[1px]"
-            >
-              <span
-                id="arrow-4"
-                onclick="handleToggle(4)"
-                class="material-symbols-outlined cursor-pointer hover:font-bold transition-all"
-              >
-                arrow_drop_down
-              </span>
-              <h5 class="font-bold">About the Founder Director</h5>
-            </div>
-            <div
-              id="data-4"
-              class="md:w-96 w-[300px] h-fit bg-blue-50 hidden showData rounded-md"
-            >
-              <p class="text-sm p-3">
-                In the year of 2019 after completing college & Computer
-                education a boy started a job as a computer teacher in a local
-                institute. After that in the year 2020 he started his own
-                computer education centre in a small room with two computer and
-                a personal laptop. From 2020 to 2024 during that period of 5
-                years he worked with 3 to 4 educational brand as a franchise
-                partner and trained 500+ students in his locality. But his mind
-                did not allow him to be limited in his local areas only , he
-                wanted to explore more thus he had started his own educational
-                brand “MIPE” aiming to produce more skillful youth.
-              </p>
-            </div>
-          </div>
+          </a>
+        </div>
+        <div class="aboutUsImg">
+          <img
+            src="./assets/imeges/Ab1.jpg"
+            width="600px"
+            alt="Consultancy image"
+          />
         </div>
       </div>
     </section>
-    <section class="w-full h-full min-h-[600px]" id="allcourses">
+
+    <section class="w-full h-full min-h-[600px]" id="services">
       <h5 class="font-bold text-center text-4xl mt-16">OUR SERVICES</h5>
       <h5 class="font-bold text-gray-600 text-center text-3xl">
         Better experiences
@@ -535,7 +397,7 @@
         class="boxContainer gap-8 lg:flex-row flex-col w-full min-w-[320px] mt-20 flex justify-center items-center flex-wrap"
       >
         <div
-          class="box1 shadow-2xl hover:shadow-blue-500 bg-blue-200 scale transition-transform duration-500 ease hover:scale-105 cursor-pointer xl:w-[27rem] lg:w-80 sm:w-[400px] w-[300px] rounded-md px-5 py-8"
+          class="box1 shadow-2xl hover:shadow-blue-500 bg-blue-200 scale transition-transform duration-500 ease hover:scale-105 cursor-pointer xl:w-[27rem] lg:w-80 sm:w-[400px] w-[270px] rounded-md px-5 py-8"
         >
           <div class="flex justify-center">
             <img
@@ -555,7 +417,7 @@
           </p>
         </div>
         <div
-          class="box1 shadow-2xl hover:shadow-blue-500 bg-blue-200 scale transition-transform duration-500 ease hover:scale-105 cursor-pointer xl:w-[27rem] lg:w-80 sm:w-[400px] w-[300px] rounded-md px-5 py-8"
+          class="box1 shadow-2xl hover:shadow-blue-500 bg-blue-200 scale transition-transform duration-500 ease hover:scale-105 cursor-pointer xl:w-[27rem] lg:w-80 sm:w-[400px] w-[270px] rounded-md px-5 py-8"
         >
           <div class="flex justify-center">
             <img
@@ -576,7 +438,7 @@
           </p>
         </div>
         <div
-          class="box1 shadow-2xl hover:shadow-blue-500 bg-blue-200 scale transition-transform duration-500 ease hover:scale-105 cursor-pointer xl:w-[27rem] lg:w-80 sm:w-[400px] w-[300px] rounded-md px-5 py-8"
+          class="box1 shadow-2xl hover:shadow-blue-500 bg-blue-200 scale transition-transform duration-500 ease hover:scale-105 cursor-pointer xl:w-[27rem] lg:w-80 sm:w-[400px] w-[270px] rounded-md px-5 py-8"
         >
           <div class="flex justify-center">
             <img
@@ -599,17 +461,80 @@
       </div>
     </section>
 
-    <section class="w-full h-full min-h-[600px]">
+    <section class="w-full h-full min-h-[600px]" id="ourTeam">
       <h6 class="font-bold text-4xl text-center mt-40">OUR TEAM</h6>
+      <div
+        class="container flex flex-wrap gap-10 justify-center items-center mt-10"
+      >
+        <div
+          class="hover:scale-110 cursor-pointer hover:bg-gray-400 transition-all duration-75 card bg-gray-300 w-[250px] h-[300px] rounded-md flex flex-col items-center"
+        >
+          <img
+            class="rounded-full mt-4"
+            src="./assets/imeges/Founder&Director.jpg"
+            width="150px"
+            alt=""
+          />
+          <p class="font-bold mt-4">Name:Mr.S.Thakuria</p>
+          <p class="font-semibold text-center text-gray-700">
+            CEO of MightyTech Consultancy
+          </p>
+        </div>
+        <div
+          class="hover:scale-110 cursor-pointer hover:bg-gray-400 transition-all duration-75 card bg-gray-300 w-[250px] h-[300px] rounded-md flex flex-col items-center"
+        >
+          <img
+            class="rounded-full mt-4"
+            src="./assets/imeges/Founder&Director.jpg"
+            width="150px"
+            alt=""
+          />
+          <p class="font-bold mt-4">Name:Mr.Pritam Najanu</p>
+          <p class="font-semibold text-center text-gray-700">Legal Adviser</p>
+        </div>
+        <div
+          class="hover:scale-110 cursor-pointer hover:bg-gray-400 transition-all duration-75 card bg-gray-300 w-[250px] h-[300px] rounded-md flex flex-col items-center"
+        >
+          <img
+            class="rounded-full mt-4"
+            src="./assets/imeges/Founder&Director.jpg"
+            width="150px"
+            alt=""
+          />
+          <p class="font-bold mt-4">Name:Mr.Himanta B. Sarma</p>
+          <p class="font-semibold text-center text-gray-700">Polical support</p>
+        </div>
+      </div>
+    </section>
+    <section class="w-full h-full min-h-[600px]" id="ourTeam">
+      <h6 class="font-bold text-4xl text-center">OUR HAPPY CLIENTS</h6>
+      <div
+        class="container overflow-y-auto flex flex-wrap gap-10 justify-center items-center mt-10"
+        style="max-height: 400px"
+      >
+        <div
+          class="hover:scale-110 cursor-pointer hover:bg-gray-400 transition-all duration-75 card bg-gray-300 w-[250px] h-[300px] rounded-md flex flex-col items-center"
+        >
+          <img
+            class="rounded-lg mt-4"
+            src="./assets/imeges/Founder&Director.jpg"
+            width="150px"
+            alt=""
+          />
+          <p class="font-bold mt-4">Reha Foundation</p>
+          <p class="font-semibold text-center text-gray-700">hffhfhfhffj</p>
+        </div>
+      </div>
     </section>
     <section id="contactUs" class="w-full h-full min-h-[600px]">
-      <div class="flex justify-between items-center flex-wrap">
-        <div class="contactDetails px-32 flex flex-col">
+      <div class="flex justify-around items-center flex-wrap">
+        <div class="contactDetails flex flex-col">
           <h5 class="text-5xl font-bold">Contact Us</h5>
           <h5 class="text-3xl">Contact With Us Any Time</h5>
           <p class="text-lg">
             Please Contact Us To Buy Any Services of Our Company
           </p>
+
           <div class="contact-list font-bold list-none">
             <li>Address : Sonapur,Kamrup(metro)(Assam) India</li>
             <li>Email : help@mipe.in</li>
@@ -617,7 +542,7 @@
           </div>
         </div>
         <div
-          class="max-w-4xl mx-auto min-w-[450px] p-8 shadow-2xl shadow-blue-500 rounded-lg mt-20"
+          class="max-w-4xl min-w-[250px] w-[450px] p-8 shadow-2xl shadow-blue-500 rounded-lg mt-20"
         >
           <form>
             <div>
@@ -627,6 +552,7 @@
                 </label>
                 <input
                   type="text"
+                  id="name"
                   required
                   placeholder="E.g. Nirmal Jyoti Thakuria"
                   class="w-full p-2 mb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -638,6 +564,7 @@
                 <input
                   type="email"
                   required
+                  id="email"
                   placeholder="E.g. nirmal@gmail.com"
                   class="w-full p-2 mb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
@@ -647,6 +574,7 @@
                 </label>
                 <input
                   type="phone"
+                  id="phone"
                   placeholder="E.g. +919707515585"
                   class="w-full p-2 mb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
@@ -654,12 +582,14 @@
                   Message
                 </label>
                 <textarea
+                  id="Message"
                   class="w-full p-2 mb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
                   placeholder="Write what you wanna say......"
                 ></textarea>
               </div>
             </div>
             <button
+              onclick="sendEmail()"
               type="submit"
               class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600"
             >
@@ -712,5 +642,6 @@
       </div>
     </footer>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/email.js"></script>
   </body>
 </html>
