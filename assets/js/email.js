@@ -1,4 +1,5 @@
-function sendEmail() {
+function sendEmail(event) {
+  event.preventDefault();
   const serviceID = "service_9yhkk08";
   const adminTemplateID = "template_3j2yurl";
   const userTemplateID = "template_nqvvdoo";
@@ -8,19 +9,25 @@ function sendEmail() {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
-    Message: document.getElementById("Message").value,
+    message: document.getElementById("message").value,
   };
 
   // Validate inputs
-  if (!params.name || !params.email || !params.phone || !params.Message) {
+  if (!params.name || !params.email || !params.phone || !params.message) {
     alert("Please fill in all the fields.");
-    return; // Stop the function execution if any field is empty
+    return;
   }
 
+  // Show the loading indicator
+  const loadingIndicator = document.getElementById("loadingIndicator");
+  const submitBTN = document.getElementById("submitBTN");
+  loadingIndicator.style.display = "block";
+  submitBTN.style.display = "none"; // Disable the button to prevent multiple submissions
+
   // Function to send emails
-  const sendEmailTo = (templateID, recipient) => {
+  const sendEmailTo = (templateID, specificParams, recipient) => {
     return emailjs
-      .send(serviceID, templateID, params)
+      .send(serviceID, templateID, specificParams)
       .then((response) => {
         console.log(`SUCCESS (${recipient}):`, response.status, response.text);
       })
@@ -32,15 +39,30 @@ function sendEmail() {
       });
   };
 
+  // Create specific params for admin and user emails
+  const adminParams = { ...params }; // Admin gets all the data
+  const userParams = {
+    name: params.name,
+    email: params.email,
+    phone: params.phone,
+    message: params.message, // Include the user's submitted message
+  };
+
   // Send emails to admin and user
   Promise.all([
-    sendEmailTo(adminTemplateID, "Admin"),
-    sendEmailTo(userTemplateID, "User"),
+    sendEmailTo(adminTemplateID, adminParams, "Admin"),
+    sendEmailTo(userTemplateID, userParams, "User"),
   ])
     .then(() => {
       alert("Emails sent successfully!");
+      document.getElementById("contactForm").reset(); // Clear the form
     })
     .catch((error) => {
       alert(error.message);
+    })
+    .finally(() => {
+      // Hide the loading indicator and re-enable the button
+      loadingIndicator.style.display = "none";
+      submitBTN.style.display = "block";
     });
 }

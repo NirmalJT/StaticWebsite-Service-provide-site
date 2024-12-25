@@ -42,16 +42,7 @@ function handleHide(index) {
   }
 }
 
-setTimeout(() => {
-  let flashmessage = document.getElementById("flash-message");
-  if (flashmessage) {
-    flashmessage.style.opacity = "0";
-    setTimeout(() => {
-      flashmessage.style.display = "none";
-    }, 500);
-  }
-  console.log("flashmessage");
-}, 5000);
+
 
 //typed js
 
