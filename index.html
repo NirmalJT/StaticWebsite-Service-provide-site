@@ -11,15 +11,10 @@
       href="./assets/imeges/QR.JPG"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <script
       type="text/javascript"
@@ -64,12 +59,28 @@
               </li>
             </ul>
             <!-- Hamburger icon for Mobile Devices -->
-            <span
+            <div
               onclick="showNavbar()"
-              class="material-symbols-outlined hover:font-bold transition-all cursor-pointer lg:!hidden block text-3xl text-white"
+              aria-label="Toggle navigation menu"
+              class="hover:font-bold transition-all cursor-pointer lg:hidden block text-3xl"
             >
-              menu
-            </span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8"
+              >
+                <path
+                  d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z"
+                ></path>
+                <path
+                  d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z"
+                ></path>
+                <path
+                  d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z"
+                ></path>
+              </svg>
+            </div>
           </div>
         </nav>
         <!-- Mobile Navbar -->
@@ -77,12 +88,35 @@
           class="hidden transition-all duration-75 ease-in-out navBar w-full h-screen bg-white absolute right-0 z-50"
         >
           <div class="mt-8 mx-10">
-            <span
+            <div
               onclick="hideNavbar()"
-              class="material-symbols-outlined cursor-pointer hover:font-bold"
+              class="cursor-pointer hover:font-bold bg-gray-500 w-10 h-10 rounded-full flex justify-center items-center hover:bg-slate-700"
             >
-              close
-            </span>
+              <svg
+                fill="#000000"
+                height="20px"
+                width="20px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490 490"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <polygon
+                    points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "
+                  ></polygon>
+                </g>
+              </svg>
+            </div>
+
             <ul class="mt-8 space-y-4 text-gray-900 text-xl">
               <li
                 class="hover:font-bold hover:text-blue-500 transition-all cursor-pointer"
@@ -183,12 +217,12 @@
           <a
             class="text-white font-bold"
             data-action="open"
-            data-phone="919707515585"
-            data-message="Hello, I am interested in your service"
+            data-phone="918474817806"
+            data-message="Hello, I am interested in your services.Please share more details , thanks"
             role="button"
             tabindex="0"
             target="_blank"
-            href="https://web.whatsapp.com/send?phone=919707515585&text=Hello%2C%20I%20am%20interested%20in%20your%20Franchise.%20Please%20Share%20more%20Details%2C%20thanks"
+            href="https://web.whatsapp.com/send?phone=918474817806&text=Hello%2C%20I%20am%20interested%20in%20your%20Services.%20Please%20Share%20more%20Details%2C%20thanks"
             >Click me to Message</a
           >
         </div>
@@ -196,12 +230,12 @@
           <a
             class="text-white font-bold"
             data-action="open"
-            data-phone="919707515585"
+            data-phone="918474817806"
             data-message="Hello, I am interested in your service. Please Share more Details, thanks"
             role="button"
             tabindex="0"
             target="_blank"
-            href="https://wa.me/919707515585?text=Hello%2C%20I%20am%20interested%20in%20your%20Franchise.%20Please%20Share%20more%20Details%2C%20thanks"
+            href="https://wa.me/918474817806?text=Hello%2C%20I%20am%20interested%20in%20your%20Services.%20Please%20Share%20more%20Details%2C%20thanks"
             >Click me to Message</a
           >
         </div>
@@ -688,7 +722,7 @@
                 <input
                   type="phone"
                   id="phone"
-                  placeholder="E.g. +919707515585"
+                  placeholder="E.g. +918474817806"
                   class="w-full p-2 mb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
                 <label for="Message" class="block mb-2 font-semibold">
@@ -771,7 +805,8 @@
               services provided by MightyTech Consultancy Service, including but
               not limited to NGO registration, renewal services, ISO
               certification, MSME certification, and website development
-              services.
+              services. By using our services, you acknowledge that you have
+              read, understood, and agreed to these terms
             </p>
           </section>
 
@@ -785,37 +820,77 @@
               upon before commencement.
             </p>
           </section>
+          <section class="mb-6">
+            <h2 class="text-2xl font-semibold text-blue-500 mb-2">
+              3. Payment Terms
+            </h2>
+            <h3 class="text-xl font-medium mb-1">a. Advance Payment</h3>
+            <ul class="list-disc ml-8 mb-4">
+              <li>
+                Customers are required to make an advance payment to initiate
+                the service.
+              </li>
+              <li>
+                The amount of the advance payment will be communicated during
+                the service agreement process.
+              </li>
+            </ul>
+
+            <h3 class="text-xl font-medium mb-1">b. Stepwise Payment</h3>
+            <ul class="list-disc ml-8 mb-4">
+              <li>
+                Payments for services are collected in stages based on progress.
+                For example:
+              </li>
+              <ul class="list-decimal ml-8">
+                <li>
+                  After completing NGO documentation, a specified amount will be
+                  due.
+                </li>
+                <li>
+                  Further payments will be scheduled as the service progresses.
+                </li>
+              </ul>
+            </ul>
+
+            <h3 class="text-xl font-medium mb-1">c. Refund Policy</h3>
+            <ul class="list-disc ml-8">
+              <li>
+                Advance payments are <strong>non-refundable</strong>. Once an
+                advance payment is made, it will not be refunded under any
+                circumstances, including if the customer decides not to proceed
+                with the service.
+              </li>
+              <li>
+                Any subsequent payments made as part of the stepwise payment
+                plan are also non-refundable once the corresponding service
+                stage has commenced.
+              </li>
+            </ul>
+          </section>
 
           <section class="mb-6">
             <h2 class="text-2xl font-semibold text-blue-500 mb-2">
-              3. Client Responsibilities
+              4. Customer Obligations
             </h2>
             <p>
-              Clients are responsible for providing accurate information and
-              documents necessary for the completion of services. Failure to
-              provide accurate details may result in delays or additional costs.
+              Customers must provide accurate and complete information required
+              for the service. Any delays caused by the customer in providing
+              necessary documentation or information may impact the service
+              timeline. MightyTech Consultancy Service will not be held
+              responsible for such delays.
             </p>
           </section>
 
           <section class="mb-6">
             <h2 class="text-2xl font-semibold text-blue-500 mb-2">
-              4. Payment Terms
+              5. Service Delivery
             </h2>
             <p>
-              All payments must be made as agreed upon during the service
-              initiation process. Delayed payments may attract penalties or
-              service interruptions.
-            </p>
-          </section>
-
-          <section class="mb-6">
-            <h2 class="text-2xl font-semibold text-blue-500 mb-2">
-              5. Confidentiality
-            </h2>
-            <p>
-              We are committed to maintaining the confidentiality of all client
-              information. No information will be shared without prior consent,
-              except as required by law.
+              Services will be delivered as per the agreed-upon schedule.
+              MightyTech Consultancy Service reserves the right to adjust
+              timelines due to unforeseen circumstances, provided customers are
+              informed in advance.
             </p>
           </section>
 
@@ -824,20 +899,66 @@
               6. Limitation of Liability
             </h2>
             <p>
-              MightyTech Consultancy Service is not liable for any direct,
-              indirect, incidental, or consequential damages arising from the
-              use of our services or website.
+              MightyTech Consultancy Service will not be liable for any direct,
+              indirect, or consequential damages arising from the use of our
+              services or website. Customers are responsible for ensuring
+              compliance with any local, state, or national laws applicable to
+              the services rendered.
             </p>
           </section>
 
           <section class="mb-6">
             <h2 class="text-2xl font-semibold text-blue-500 mb-2">
-              7. Changes to Terms
+              7. Modification of Terms
             </h2>
             <p>
-              We reserve the right to modify these terms at any time. Changes
-              will be effective immediately upon posting on our website.
+              MightyTech Consultancy Service reserves the right to modify these
+              Terms and Conditions at any time without prior notice. The updated
+              terms will be made available on our website.
             </p>
+          </section>
+
+          <section class="mb-6">
+            <h2 class="text-2xl font-semibold text-blue-500 mb-2">
+              8. Termination of Services
+            </h2>
+            <p>
+              MightyTech Consultancy Service reserves the right to terminate
+              services for customers who violate these terms or fail to meet
+              payment obligations.
+            </p>
+          </section>
+
+          <section class="mb-6">
+            <h2 class="text-2xl font-semibold text-blue-500 mb-2">
+              9. Governing Law
+            </h2>
+            <p>
+              These Terms and Conditions are governed by and construed in
+              accordance with the laws of India. Any disputes arising from these
+              terms shall be subject to the exclusive jurisdiction of the courts
+              in Guwahati, Assam.
+            </p>
+          </section>
+
+          <section class="mb-6">
+            <h2 class="text-2xl font-semibold text-blue-500 mb-2">
+              10. Contact Information
+            </h2>
+            <p>
+              For any queries or concerns regarding these Terms and Conditions,
+              please contact us at:
+            </p>
+            <address class="ml-4">
+              <strong>MightyTech Consultancy Service</strong><br />
+              Email:
+              <a
+                href="mailto:support@mightytech.com"
+                class="text-blue-600 underline"
+                >support@mightytech.com</a
+              ><br />
+              Phone: +91-84748-17806
+            </address>
           </section>
 
           <p class="mt-8 text-center">
@@ -849,56 +970,71 @@
     </section>
 
     <footer class="bg-blue-900 p-6 text-white mt-6 w-full">
-      <div
-        class="faq flex flex-col lg:flex-row justify-center items-center sm:ml-12 md:ml-0 gap-14 h-auto py-10 lg:min-h-[350px]"
-      >
+      <div class="faq flex flex-col lg:flex-row justify-between items-start gap-10 h-auto py-10 container mx-auto">
+        <!-- Office Address -->
         <div class="col1 lg:text-left">
-          <h6 class="font-bold mb-3 text-center text-2xl">Contact Info</h6>
-          <p class="w-full lg:w-80 cursor-pointer text-sm">
-            DK Road, Near Nehru Library, Borjari No. 1, Barpak, Morigaon
-            (Assam), India, 782411
+          <h6 class="font-bold mb-4 text-center lg:text-left text-2xl">Office Address</h6>
+          <p class="w-full lg:w-80 text-sm leading-relaxed">
+            DK Road, Near Nehru Library, Borjari No. 1, Barpak, Morigaon (Assam), India, 782411
             <br />
             E-Mail:
-            <a href="mailto:nirmal@gmail.com" class="underline"
-              >nirmal@gmail.com</a
-            >
+            <a href="mailto:nirmal@gmail.com" class="underline hover:text-blue-400">nirmal@gmail.com</a>
             <br />
             Ph.: +91-97075-15585
           </p>
         </div>
-
+    
+        <!-- Our Services -->
         <div class="col2 lg:text-left">
-          <h6 class="font-bold mb-3 text-center text-2xl">Our Services</h6>
-          <p class="w-full lg:w-80 cursor-pointer text-sm">
-            NGO Registration & Renual Club Registration & Renual Society
-            Registration & Renual Association Registration & Renual Committee
-            Registration & Renual NGO Documentation & Annual Compliance ISO
-            Certification Udyam Registration Firm Registration Firm Registration
-            under Indian Partnership Act 1932 NGO Website Design and Development
-            and Lots More...
+          <h6 class="font-bold mb-4 text-center lg:text-left text-2xl">Our Services</h6>
+          <p class="w-full lg:w-80 text-sm leading-relaxed">
+            NGO Registration & Renewal, Club Registration & Renewal, Society Registration & Renewal,
+            Association Registration & Renewal, Committee Registration & Renewal, NGO Documentation & Annual
+            Compliance, ISO Certification, Udyam Registration, Firm Registration under Indian Partnership Act
+            1932, NGO Website Design and Development, and Lots More...
           </p>
         </div>
-        <div class="col3 text-center lg:text-left ml-4">
-          <h6 class="font-bold mb-3 text-center text-2xl">
-            For online payment
-          </h6>
+    
+        <!-- Online Payment -->
+        <div class="col3 text-center lg:text-left">
+          <h6 class="font-bold mb-4 text-center lg:text-left text-2xl">For Online Payment</h6>
           <img
             src="./assets/imeges/QR.JPG"
-            alt="Qr for online payment  "
-            width="250px"
+            alt="QR Code for online payment"
+            class="mx-auto lg:mx-0 w-56 border-2 border-white rounded-md"
           />
         </div>
       </div>
-      <!-- <a href="#terms-and-conditions"> -->
-      <div class="hover:text-blue-400 cursor-pointer">
-        <p class="text-center font-bold" id="Terms&ConBTN">Terms & Service</p>
+    
+      <!-- Social Media Icons -->
+      <div class="flex justify-center gap-8 py-6">
+        <a href="https://www.instagram.com" target="_blank" class="hover:text-blue-400">
+          <i class="fab fa-instagram text-3xl"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="hover:text-blue-400">
+          <i class="fab fa-facebook text-3xl"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="hover:text-blue-400">
+          <i class="fab fa-youtube text-3xl"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="hover:text-blue-400">
+          <i class="fab fa-twitter text-3xl"></i>
+        </a>
       </div>
-      <!-- </a> -->
-      <div class="text-center py-8 text-xs lg:text-sm cursor-pointer">
+    
+      <!-- Terms and Conditions -->
+      <div class="hover:text-blue-400 cursor-pointer">
+        <p class="text-center font-bold" id="Terms&ConBTN">Terms & Services</p>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center py-6 text-sm lg:text-base border-t border-blue-700">
         Copyright &copy; 2024 <b>MIGHTYTECH</b> | Designed and Developed By
-        <a href="/"><b> MIGHTYTECH Solution and Services</b></a>
+        <a href="/" class="hover:text-blue-400"><b>MIGHTYTECH Solution and Services</b></a>
       </div>
     </footer>
+    
+
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/email.js"></script>
   </body>
