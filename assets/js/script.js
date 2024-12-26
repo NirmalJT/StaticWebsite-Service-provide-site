@@ -46,15 +46,15 @@ function handleHide(index) {
 
 //typed js
 
-var options = {
-  strings: [
-    "MIGHTYTECH CONSULTANCY SERVICE",
-  ],
-  typeSpeed: 70, // Speed of typing in milliseconds
-  backSpeed: 60, // Speed of backspacing
-  backDelay: 1000, // Delay before starting to backspace
-  startDelay: 500, // Delay before typing starts
-  loop: true, // Whether to loop the animation
-};
+// var options = {
+//   strings: [
+//     "MIGHTYTECH CONSULTANCY SERVICE",
+//   ],
+//   typeSpeed: 70, // Speed of typing in milliseconds
+//   backSpeed: 60, // Speed of backspacing
+//   backDelay: 1000, // Delay before starting to backspace
+//   startDelay: 500, // Delay before typing starts
+//   loop: true, // Whether to loop the animation
+// };
 
-var typed = new Typed("#typed-output", options);
+// var typed = new Typed("#typed-output", options);
