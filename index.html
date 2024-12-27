@@ -85,7 +85,7 @@
         </nav>
         <!-- Mobile Navbar -->
         <nav
-          class="hidden transition-all duration-75 ease-in-out navBar w-full h-screen bg-white absolute right-0 z-50"
+          class="transition-all duration-75 ease-in-out navBar w-full h-fit pb-3 bg-white absolute right-0 z-50"
         >
           <div class="mt-8 mx-10">
             <div
@@ -136,7 +136,12 @@
               <li
                 class="hover:font-bold hover:text-blue-500 mt-2 transition-all cursor-pointer"
               >
-                <a href="#ourTeam"> Our Happy Clients</a>
+                <a href="#ourTeam"> Our Team</a>
+              </li>
+              <li
+                class="hover:font-bold hover:text-blue-500 mt-2 transition-all cursor-pointer"
+              >
+                <a href="#ourHappyClients"> Our Happy Clients</a>
               </li>
               <li
                 class="hover:font-bold hover:text-blue-500 mt-2 transition-all cursor-pointer"
@@ -465,7 +470,7 @@
       </div>
     </section>
 
-    <section class="w-full h-full min-h-[600px]">
+    <section class="w-full h-full min-h-[600px]" id="ourTeam">
       <h6 class="font-bold text-4xl text-center mt-40">OUR TEAM</h6>
       <div
         class="container flex flex-wrap gap-10 justify-center items-center mt-10 m-auto"
@@ -754,8 +759,7 @@
         </div>
       </div>
     </section>
-    <section
-      id="terms-and-conditions"
+    <section id="terms-and-conditions"
       class="w-full h-full min-h-[600px] fixed top-0 left-0 z-50 hidden bg-black bg-opacity-50 flex justify-center items-center transition-opacity duration-300"
       aria-hidden="true"
       aria-modal="true"
